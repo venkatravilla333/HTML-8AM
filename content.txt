@@ -150,7 +150,7 @@ HTML Elements
    href = 'path of another webpage' or '#id value of section in same page'  
    target => Specifies where to open the linked document.
 
-	        _blank 
+	            _blank 
                 _self (default)	
 
    _blank    => Opens the linked document in a new window or tab.
@@ -200,3 +200,139 @@ HTML Elements
            color, 
            size,
            align. 
+
+           10) List elements:
+   =============
+
+   <ul>: unordered (bulleted) list.
+   <ol>: ordered (numbered) list.
+   <li>: list item.
+   <dl>: description list.
+   <dt>: data term.
+   <dd>: data definition.
+
+   ol => display: block.
+   ul => display: block
+   dl => dispay: block
+
+  - Ordered lists are used for lists of items for which the order of the items does matter.
+  - Unordered lists are used for lists of items for which the order of the items does not matter.
+
+
+   Attributes:
+   ---------- 
+
+     - we can use "type" attribute for only ordered and unordered elements.
+     - "start" and "reversed" attributes are only for ordered list.
+     
+     - These are only for ordered list
+     
+       - Number (default)
+        
+       - type = 'a/A/I/i'
+     
+       - reversed
+
+       - start
+
+          - Alphabet
+
+            lower case (a)
+            UPPER CASE (A)
+
+          - Roman
+
+            lower case (i)
+            UPPER CASE (I)
+
+     - These are only for unordered list
+
+         type:
+
+          - disc (default)
+          - circle
+          - square
+          - none
+
+
+11) HTML entities 
+    =============
+
+   => &nbsp; It gives non-breaking space.
+
+   => &copy; It will show copy right symbol. 
+
+   => &reg;  It will show trademark symbol.
+
+
+12) Table elements
+    ==============
+
+  <table>	- Defines a table
+  <caption>     - Defines a table caption
+  <thead>	- Groups the header content in a table
+  <tbody>	- Groups the body content in a table
+  <tfoot>	- Groups the footer content in a table
+  <tr>	        - Defines a row in a table (rows)
+  <th>	        - Defines a header cell in a table (columns)
+  <td>	        - Defines a data cell in a table (columns)
+  
+   Attributes:
+   ----------
+  1)
+
+   border = '1' | '5' | '10' => if we use border then no need of frame and rules.    
+   frame = box | border | above | below | hsides | vsides | lhs | rhs 
+   rules = all | rows | cols | groups (between cells / groups)
+
+  2)
+
+   width => It will effect the table header & table body & table footer
+   height => It will table body but not effect the table header(thead) & (tfoot) footer.
+
+  3)
+
+   cellspacing => It gives space between all cells.
+   cellpadding => It gives space with in cells.
+			
+  4) 
+
+   colspan => merging columns in specific row. 
+   rowspan => merging rows in specific column.
+
+  5) 
+
+   text-align (align) => text align horizontally. (left|center|right)
+   vertical-align (valign) => text align vertically. (top|middle|bottom)
+
+
+  6) 
+
+   bgcolor => bg color to table.
+
+			  
+   horizontal alignment (text in table)
+   ------------------------------------
+
+   The text-align property sets the horizontal alignment (like left, right, or center) of the content in    <th> or <td>.
+
+   By default, the content of <th> elements are center-aligned and the content of <td> elements are         left-aligned.
+				
+   vertical alignment (text in table)
+   ----------------------------------
+
+   The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content     in <th> or <td>.
+
+   By default, the vertical alignment of the content in a table is middle (for both <th> and <td>           elements).
+
+
+Important Note
+--------------
+These attributes (align and valign) are deprecated in HTML5 and should not be used in modern web development. Instead, it's recommended to use CSS for such styling:
+
+th, td {
+           
+            text-align: center; /* horizontal alignment */
+            vertical-align: middle; /* vertical alignment */
+           
+        }

@@ -321,9 +321,9 @@ HTML Elements
    vertical alignment (text in table)
    ----------------------------------
 
-   The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content     in <th> or <td>.
+   The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
 
-   By default, the vertical alignment of the content in a table is middle (for both <th> and <td>           elements).
+   By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
 
 
 Important Note
